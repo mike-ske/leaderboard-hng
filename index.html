@@ -1,18 +1,3 @@
-<?php
-
-include ("dbconn.php");
-
-$dsc = isset($_POST["dsc"]);
-$asc = isset($_POST["asc"]);
-
-
-$sql = "SELECT `s/n`, `fullname`, `points` FROM `leadertb` ORDER BY `points` DESC";
-$result = mysqli_query($conn, $sql) or die('failed');
-
-
- ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
